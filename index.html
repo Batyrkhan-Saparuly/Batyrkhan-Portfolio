@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batyrkhan Saparuly - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Batyrkhan Saparuly</h1>
+        <p>Tech Artist & Sound Designer</p>
+    </header>
+
+    <section id="project-info">
+        <h2>Project Overview</h2>
+        <ul>
+            <li>Role: Tech Artist, Sound Designer</li>
+            <li>Tools Used: Unreal Engine 5, Github, Google Drive, FL Studio</li>
+            <li>Duration: March 2024 - April 2024</li>
+            <li>Team Size: 6</li>
+            <li>Genre: 3-D Collect-a-thon Traversal</li>
+            <li>Platform: Windows</li>
+            <li>Project Status: Published</li>
+        </ul>
+    </section>
+
+    <section id="game-description">
+        <h2>Game Description</h2>
+        <p>A3-Dcollect-a-thon traversal game revolving around a lizardman who is attempting to scale
+            a mountain. As you progress the game by collecting runes (or power-ups), you can access
+            further areas which will allow you to steadily scale the mountain.</p>
+    </section>
+
+    <section id="contributions">
+        <h2>Contributions</h2>
+        <ul>
+            <li>Implemented Main Menu and Pause Menu, including the UI</li>
+            <li>Implemented basic Save/Load system</li>
+            <li>Implemented dynamic footstep sounds by line tracing</li>
+            <li>Implemented all SFX, ambience, and music</li>
+        </ul>
+    </section>
+
+    <section id="challenges">
+        <h2>Challenges</h2>
+        <ul>
+            <li>Venturing into Unreal Engine and its Blueprints system marked a significant challenge due to its complex learning curve. 
+                This was my inaugural experience with both the engine and the framework. It took me a lot of time to understand how Blueprints and UE5 work in general.</li>
+            <li>It was my first time working with a team on such a big project, and it was quite challenging to adapt to the whole process. I faced the difficulties from the beginning, when we had to form our teams, since I was not as experienced as other Tech Artists</li>
+            <li>The main challenge for our team was the Version Control, none of us had enough will and time to understand Git LFS, and we ended up losing a lot of time because of that.</li>
+        </ul>
+    </section>
+
+    <section id="version-control">
+        <h2>Version Control</h2>
+        <p>Started with GitHub, transitioned to Git LFS. However, none of us could really figure out how to effectively use Git LFS and how to merge properly. So we ended up simply using Google Drive to manage and merge different versions of the game. 
+            It was not very effective, since one of us had to download all of the versions to then merge all the Blueprints, Sounds, UIs and etc to one version.</p>
+    </section>
+
+    <section id="code-architecture">
+        <h2>Code Architecture</h2>
+        <p>Focused on the code for the main menu and pause menu, implemented fully using Unreal Engine's Blueprint system. Also worked on the UI for the widgets. Implemented the save/load functionalities, incorporated within the main and pause menus. That took the most time, since incorporating so many connected things was confusing. Most of the work for Save/Load is done in GameInstance, where I created the functions.</p>
+        <div class="screenshot">
+            <img src="MainMenu1.png" alt="Screenshot of Blueprint">
+        </div>
+        <div class="screenshot">
+            <img src="MainMenu2.png" alt="Screenshot of Blueprint">
+            <p>Main Menu Widget Blueprint.</p>
+        </div>
+        <br>
+        <div class="screenshot">
+            <img src="PauseMenu1.png" alt="Screenshot of Blueprint">
+        </div>
+        <div class="screenshot">
+            <img src="PauseMenu2.png" alt="Screenshot of Blueprint">
+        </div>
+        <div class="screenshot">
+            <img src="PauseMenu3.png" alt="Screenshot of Blueprint">
+            <p>Pause Menu Widget Blueprint.</p>
+        </div>
+        <br>
+        <div class="screenshot">
+            <img src="LoadButton.png" alt="Screenshot of Blueprint">
+            <p>Load Button Blueprint.</p>
+        </div>
+        <br>
+        <div class="screenshot">
+            <img src="SaveButton.png" alt="Screenshot of Blueprint">
+            <p>Save Button Blueprint.</p>
+        </div>
+        <br>
+        <div class="screenshot">
+            <img src="SaveGameFunction.png" alt="Screenshot of Blueprint">
+            <p>SaveGame funtion in our Game Instance Blueprint.</p>
+        </div>
+        <br>
+        <div class="screenshot">
+            <img src="LoadGameFunction.png" alt="Screenshot of Blueprint">
+            <p>LoadGame funtion in our Game Instance Blueprint.</p>
+        </div>
+        <br>
+        <div class="screenshot">
+            <img src="LoadingTheGameFunction.png" alt="Screenshot of Blueprint">
+            <p>LoadingTheGame funtion in our Game Instance Blueprint.</p>
+        </div>
+        <br>
+        <div class="screenshot">
+            <img src="CustomEvent.png" alt="Screenshot of Blueprint">
+            <p>MenuLoadGame custom event in our Game Instance Blueprint.</p>
+        </div>
+        <br>
+        <div class="screenshot">
+            <img src="DynamicFootsteps.png" alt="Screenshot of Blueprint">
+            <p>Dynamic Footstep logic in our Player Character's Animation Blueprint.</p>
+        </div>
+    </section>
+
+    <section id="code-architecture2">
+        <h2>Excerpt of a rune collection sound that I designed, and dynamic footsteps:</h2>
+            <div class="screenshot">
+                <video width="100%" height="100%" controls autoplay loop>
+                    <source src="ExampleVideo.mp4" type="video/mp4">
+                </video>
+            </div>
+    </section>
+
+    <section id="learnings">
+        <h2>What I Learned</h2>
+        <ul>
+            <li>Blueprint Mastery: Advanced my skills in using Unreal Engine’s Blueprint system to handle complex UI interactions and game functionalities.</li>
+            <li>Sound Integration: Improved ability to implement dynamic sound environments, which significantly enhances the immersive experience of the game. I worked closely with my team when designing and editing the SFX.</li>
+            <li>Version Control: Learning Git and Git LFS, and being able to use it efficiently is extremely helpful and important. It is inefficient to use google drive ;)</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 Batyrkhan Saparuly. All rights reserved.</p>
+    </footer>
+</body>
+</html>
